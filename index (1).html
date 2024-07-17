@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Functional To-Do List</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Multi-Functional To-Do List</h1>
+            <nav>
+                <button id="todoBtn">To-Do List</button>
+                <button id="calculatorBtn">Calculator</button>
+                <button id="incomeCalcBtn">Income Calculator</button>
+                <button id="currencyRatesBtn">Currency Rates</button>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="todoSection" class="active">
+                <h2>To-Do List</h2>
+                <div class="todo-input">
+                    <input type="text" id="newTask" placeholder="Add a new task">
+                    <button id="addTaskBtn">Add</button>
+                </div>
+                <ul id="taskList"></ul>
+            </section>
+            
+            <section id="calculatorSection">
+                <h2>Calculator</h2>
+                <div id="calculator"></div>
+            </section>
+            
+            <section id="incomeCalcSection">
+                <h2>Income Calculator</h2>
+                <div id="incomeCalculator"></div>
+            </section>
+            
+            <section id="currencyRatesSection">
+                <h2>Currency Rates</h2>
+                <div id="currencyRates"></div>
+            </section>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/incomeCalc.js"></script>
+    <script src="js/currencyRates.js"></script>
+</body>
+</html>
